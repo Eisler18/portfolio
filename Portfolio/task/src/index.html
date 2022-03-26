@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <button type="button" onclick="displayList()">
+                <img src="https://ucarecdn.com/8b15eddc-6ec1-4124-b85b-fa0ab31736af/-/crop/578x545/666,0/-/preview/" width="5%" alt="List">
+            </button>
+            <ul id="navList" >
+                <li><a href="#about">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+            <ul class="hamburger">
+                <li><a href="#about">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <h1>Will Smith</h1>
+    </header>
+
+    <section id="about">
+        <img src="images/person.jpg" alt="Me">
+        <div>
+            <h2>About me</h2>
+            <p>I'm 25 years old</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div>
+            <img src="images/project1.png" alt="Flashcards">
+            <p>Flashcards</p>
+            <button type="button" class="open-window" onclick="popUp('flashcards')">See Details</button>
+        </div>
+        <div>
+            <img src="images/project2.png" alt="Virtual Piano">
+            <p>Virtual Piano</p>
+            <button type="button" class="open-window" onclick="popUp('piano')">See Details</button>
+        </div>
+    </section>
+
+    <div class="window">
+        <button id="close">&times;</button>
+    </div>
+
+    <section id="contacts">
+        <h2>Contact</h2>
+        <p>You can contact me at <a href="mailto:test@mail.com">test@mail.com</a> or phone number <a href="tel:+155555">+155555</a></p>
+        <div>
+            <img src="images/facebook.svg" alt="Facebook">
+            <img src="images/twitter.svg" alt="Twitter">
+            <img src="images/instagram.svg" alt="Instagram">
+            <img src="images/github.svg" alt="GitHub">
+        </div>
+    </section>
+
+    <footer>
+        <p>Will Smith, 2022</p>
+    </footer>
+
+    <script src="actions.js"></script>
+</body>
+</html>

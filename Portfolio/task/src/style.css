@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    flex-flow: column;
+    padding: 2px 2px;
+    height: 120px;
+    background-color: black;
+}
+
+h1 {
+    margin: 0;
+    text-align: left;
+    background-color: #454545;
+    color: white;
+    height: 60%;
+    padding: 30px 0 0 60px;
+}
+
+nav {
+    height: 40%;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100%;
+    text-align: center;
+}
+
+ul li {
+    position: relative;
+    flex-basis: 120px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#about {
+    justify-content: center;
+    display: flex;
+    background-color: gray;
+}
+
+#about * {
+    align-self: flex-end;
+    margin: 20px;
+}
+
+#portfolio {
+    display: flex;
+    flex-flow: wrap;
+    background-color: gray;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#portfolio h2 {
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+#portfolio img {
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+}
+
+#portfolio p {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#contacts {
+    background-color: gray;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#contacts h2 {
+    margin: 0;
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 10px;
+}
+
+#contacts img {
+    width: 3%;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 30px;
+}
+
+.window {
+    background-color: #ffffff;
+    width: 420px;
+    padding: 15px 20px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    border-radius: 8px;
+    display: none;
+    text-align: center;
+}
+
+.window button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 10px;
+    color: #ffffff;
+    background: #03549a;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.open-window {
+    border-radius: 2px;
+    background-color: #ffffff;
+    text-align: center;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav button {
+    display: none;
+    background-color: black;
+    border: none;
+}
+
+.hamburger {
+    margin: 0;
+    display: none;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100%;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    nav button {
+        display: block;
+    }
+
+    #navList {
+        display: none;
+    }
+}
+
+
+
